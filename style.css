@@ -1,0 +1,345 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+  @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@600&family=Poppins:wght@500&display=swap');
+
+html,body{
+    height: 100%;
+    width: 100%;
+   
+    overflow: hidden;
+}
+
+
+.main  {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0,0,0,0.1);
+    
+}
+
+.second-main{
+    height: 100vh;
+    width: 100vw;
+    background-color:rgb(212, 0, 255);
+}
+
+.third-main  {
+    height: 100vh;
+    width: 100vw;
+    background-color:aqua;
+    
+}
+
+.fourth-main  {
+    height: 100vh;
+    width: 100vw;
+    background-color:royalblue;
+    
+}
+.buy-now{
+    height: 60px;
+    width: 100%;
+    background-color: rgba(60, 60, 60, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.buy-now h4{
+    color: #cfc8bd;
+    
+}
+.pole{
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -4px;
+}
+.pole .leftbar{
+    
+    width: 25%;
+}
+.pole .rightbar{
+    
+    width: 25%;
+}
+.leftbuy{
+    display: flex;
+    gap: 3vw;
+    padding: 0 3vw;
+
+}
+.rightbuy{
+    display: flex;
+    gap: 3vw;
+    padding: 0 3vw;
+}
+.leftbuy h4{
+    z-index: 1;
+}
+
+.decor{
+    display: flex;
+    justify-content: space-between;
+    margin: -3px;
+}
+.accolades-right{
+    width: 11vw;
+    position: absolute;
+    display: flex;
+    left: 81vw;
+    top: 9rem;
+}
+.accolades-left{
+    width: 18vw;
+    position: absolute;
+    display: flex;
+    left: 3vw;
+    top: 8rem;
+}
+.left{
+    width: 150px;
+    height: 150px;
+}
+.right{
+    width: 150px;
+    height: 150px;
+}
+.nav   {
+
+    height: 40px;
+    width: 100%;
+    background-color: #231B10;
+    display: flex;
+    align-items: center;
+    justify-content:space-between ;
+    padding: 0 3vw;
+    
+    font-family: 'Poppins', sans-serif;
+  
+}
+.inside-nav{
+
+    display: flex;
+    gap: 1vw;
+    font-size: 1vw;
+    align-items: center;
+
+}
+
+.nav h6:hover{
+
+    color: #ffc400;
+    transition: 1s ease;
+    
+}
+.nav button{
+
+    padding: 1vh 2vw;
+    border-radius: 5px;
+    
+}
+
+.inside-nav h6{
+
+   
+    
+    text-transform: uppercase;
+
+    
+}
+.nav h6{
+
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight:100;
+    color: #91632A;
+    cursor: pointer;
+}
+.inside-nav .icon i{
+   color: #b29d83;
+   padding: 5px;
+   cursor:pointer;
+  
+}
+.inside-nav .icon i:hover{
+    color: #ffc400;
+    transition: 1s ease;
+
+   
+ }
+.nav .region{
+
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight:100;
+    color: #fff;
+    
+}
+.inside-nav .login{
+    color: #fff;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: none;
+}
+.genshinvideo{
+
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100%;
+    object-fit:cover;
+    z-index: -1;
+    
+}
+
+.logo{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 40%;
+   
+}
+
+.purchase{
+    position: absolute;
+    height: 20vh;
+    width: 27vw;
+    background-color: #002B58;
+    border: 2px solid #EEC979;
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%,-50%);
+    border-radius: 5px;
+   text-align: center;
+   
+   
+}
+.purchase h4{
+    
+    color: #c4a768;
+    font-size: 18px;
+    
+    font-weight: 200;
+    margin-top: 20px;
+}
+.purchase .rule{
+
+    width: 15vw;
+   margin: 2px;
+}
+
+.purchase h3{
+
+    color: #ffe4aa;
+    font-size: 25px;
+   
+    font-weight: 400;
+    
+}
+.purchase .nintendo{
+
+    color: #e2c689;
+    font-size: 19px;
+   
+    font-weight: 400;
+    
+}
+.ham{
+    color: #fff;
+    display: none;
+}
+.quote{
+    display: none;
+}
+@media (max-width:600px) {
+    .genshinvideo{
+
+        width: 84rem;
+        height: 100%;
+        object-fit: fill;
+        z-index: -1;
+        position: fixed;
+        left: -55px;
+    
+        
+    }
+    .logo{
+        top: 6vh;
+        left: 22vw;
+        margin: 10px;
+        
+    }
+    .inside-nav h6{
+        display:none;
+    }
+    .icon{
+        display:none;
+    }
+    
+    .region{
+        display:none;
+    }
+    
+    .nav{
+        height: 15vh;
+    }
+    .pole{
+        position: fixed;
+        top: 15.5vh;
+    }
+    .left{
+        position: fixed;
+        top: 15vh;
+    }
+    .right{
+        position: fixed;
+        right: 0vw;
+        top: 15vh;
+    }
+   .ham{
+    display: block;
+   }
+   .ham i{
+    width: 11vw;
+    font-size: 9vw;
+    color: #c4a768
+   }
+   .purchase{
+    position: fixed;
+    width: 79vw;
+    top: 61vh;
+    height: 22vh;
+   
+   }
+   .purchase h3{
+    font-size: 6vw;
+    
+   }
+   .quote{
+    display: flex;
+    width: 91vw;
+    right: 5vw;
+    top: 40vh;
+    position: fixed;
+    
+   }
+   .accolades-left{
+    width: 66vw;
+    position: fixed;
+    top: 80vh;
+    left: 16vw;
+   
+   }
+   .accolades-right{
+    display: none;
+   }
+   .buy-now{
+    display: none;
+   }
+
+}
+
